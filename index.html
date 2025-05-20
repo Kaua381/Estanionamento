@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Parquímetro</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="scripts.js"></script>
+</head>
+<body>
+  <header>
+    <h1>Parquímetro Virtual</h1>
+    <p>Insira o valor conforme a tabela para definir o tempo de estacionamento.</p>
+  </header>
+
+  <main id="blocoJogo">
+    <!-- Bloco da Tabela -->
+    <div id="blocoTabela">
+      <img src="tabelaEstacionamento.jpeg.png" alt="Tabela de Estacionamento" width="350" height="200">
+    </div>
+
+    <!-- Bloco de Interação -->
+    <div id="blocoInteracao">
+      <label for="valor">Insira o valor (R$):</label>
+      <input type="number" id="valor" step="0.01" min="0">
+
+      <button onclick="parquimetro.calcularTempo()">Calcular</button>
+    </div>
+
+    <!-- Bloco de Resultado -->
+    <div id="resultado"></div>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Kauã F. - Todos os direitos reservados.</p>
+    <p>Conecte-se comigo!</p>
+    <a href="#" target="_blank">LinkedIn</a>
+    <a href="#" target="_blank">GitHub</a>
+  </footer>
+</body>
+</html>
